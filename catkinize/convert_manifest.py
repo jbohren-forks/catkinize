@@ -339,13 +339,15 @@ def create_project_xml(package_name, version, description, maintainers,
 
 %(authors_part)s
 
-<!-- Dependencies needed to compile this pacakge. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this pacakge. -->
 %(build_depends_part)s
 
-<!-- Dependencies needed after this package is compiled. -->
+  <!-- Dependencies needed after this package is compiled. -->
 %(run_depends_part)s
 
-<!-- Dependencies needed only for running tests. -->
+  <!-- Dependencies needed only for running tests. -->
 %(test_depends_part)s
 
 %(replaces_part)s
